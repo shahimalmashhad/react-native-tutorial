@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { View, TouchableOpacity, Text, StyleSheet } from "react-native";
 import Home from "./Home";
+import HomeModal from "./HomeModal";
+import HomeStatusBar from "./HomeStatusBar";
 
 const AlignContentLayout = () => {
   const [alignContent, setAlignContent] = useState("flex-start");
@@ -29,6 +31,8 @@ const AlignContentLayout = () => {
         <View style={[styles.box, { backgroundColor: "mediumslateblue" }]} />
         <View style={[styles.box, { backgroundColor: "purple" }]} />
       </PreviewLayout>
+      <HomeModal />
+      <HomeStatusBar />
     </>
   );
 };
